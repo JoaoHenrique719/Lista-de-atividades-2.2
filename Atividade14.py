@@ -1,20 +1,5 @@
-inventario1 = "Espada"
-inventario2 = "Poção de cura"
-inventario3 = "Escudo"
+#Escreva um código que peça a quantidade de "vidas" do jogador, converta para inteiro e exiba o valor dobrado usando o print().
 
-heroi = input("Qual o nome do seu herói? ")
-print(f"O herói {heroi} acaba de entrar na guilda!")
 vid = int(input("Quantos pontos de vida possui? "))
 vid *= 2
-print(f"O jogador {heroi} possui {vid} pontos de vida.")
-cidade = input("Viajante, qual o nome da cidade que você está buscando? ")
-
-print(f"Essa cidade... {cidade}, é conhecida por sua população arteira, tome cuidado.")
-
-print(f"Inventário: \n {inventario1}; \n {inventario2}; \n {inventario3}")
-
-print(f"----------\n|Menu    |\n----------")
-
-sal = str(input("Deseja salvar o seu progresso?(S/N) "))
-
-print(f"A tecla teclada foi {sal}")
+print(f"O jogador  possui {vid} pontos de vida.")
