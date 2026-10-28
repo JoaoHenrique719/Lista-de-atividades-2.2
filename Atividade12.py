@@ -1,19 +1,12 @@
-inventario1 = "Espada"
-inventario2 = "Poção de cura"
-inventario3 = "Escudo"
+#Crie um código que pergunte: "Deseja salvar o progresso? (S/N" e apenas exiba no console a resposta digitada.
 
-heroi = input("Qual o nome do seu herói? ")
+salvar = str(input("Deseja salvar o progresso(S/N):"))
 
-print(f"O herói {heroi} acaba de entrar na guilda!")
-
-cidade = input("Viajante, qual o nome da cidade que você está buscando? ")
-
-print(f"Essa cidade... {cidade}, é conhecida por sua população arteira, tome cuidado.")
-
-print(f"Inventário: \n {inventario1}; \n {inventario2}; \n {inventario3}")
-
-print(f"----------\n|Menu    |\n----------")
-
-sal = str(input("Deseja salvar o seu progresso?(S/N) "))
-
-print(f"A tecla teclada foi {sal}")
+if salvar == "S":
+    print("O sistema será salvo.")
+    
+elif salvar == "N":
+    print("O progresso será perdido.")
+    
+else: 
+    print("Resposta inválida, perdendo o progresso.")
